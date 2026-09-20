@@ -1,5 +1,5 @@
 reasources used:
-  < books:
+  _ books:
   - littleosbook by someguyswilladdthemlater
   - Tanenbaum
   - Silbersatz
