@@ -1,4 +1,5 @@
-books used:
-littleosbook by someguyswilladdthemlater
-Tanenbaum
-Silbersatz
+reasources used:
+-books:
+  - littleosbook by someguyswilladdthemlater
+  - Tanenbaum
+  - Silbersatz
