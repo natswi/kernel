@@ -1,0 +1,10 @@
+notice: that this is the legacy boot process not UEFI! UEFI works differently.
+
+
+click power button -> POST (Power-On Self Test) [exectued by BIOS] -> BIOS firmware -> BIOS is coppied from ROM to RAM -> BIOS checks for bootloader
+in Boot -> [first stage bootloader] firmware looks for master boot records [MBR] (512 first records in 16-bit real mode at 0x7C00) aka boot sector identified by 511 and 512
+bytes '55AA' only then it is recogized as a bootloader
+-> second-staage bootloader is located
+
+it's a very delicate process namely transition fromt the BIOS startup stage to a the next boot stage.
+Due to real mode which is not secure it lets user to mess up the CPU and even destroy it.

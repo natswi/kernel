@@ -5,3 +5,6 @@ INITIAL
 start -> bootloader w nasm, testowanie z qemu
 stack:
     https://stackoverflow.com/questions/2120297/develop-a-bootloader-in-assembly
+
+3.11.2026
+bootloader
