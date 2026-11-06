@@ -1,5 +1,17 @@
-[ORG 0x7C00]
+BITS 16
+ORG 0x7C00
 
+MOV SI, 0
+PRINT:
+    MOV AH, 0x0E
+    MOV AL, [TEST + SI]
+    INT 0x10
+    ADD SI, 1
+    CMP BYTE [TEST + SI], 0
+    JNE PRINT
 
+TEST:
+    DB "TEST", 0
 
+TIMES 510 - ($ - $$) DB 0
 DW 0xAA55
